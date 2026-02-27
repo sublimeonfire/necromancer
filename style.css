@@ -3,14 +3,20 @@
     src:url('Minecraftia-Regular.ttf');
 }
 
-/* 🔮 BACKGROUND TILE */
+/* 🔮 BACKGROUND + VIEWPORT LOCK */
 body{
     margin:0;
+    height:100vh;
+    overflow:hidden;                 /* ⭐ remove scroll */
     background:url('background.png');
     background-repeat:repeat;
     font-family:'Minecraftia', monospace;
     color:#fff;
     position:relative;
+
+    display:flex;                    /* ⭐ centralização real */
+    justify-content:center;
+    align-items:center;
 }
 
 /* 🔮 CRT SCANLINE */
@@ -42,15 +48,13 @@ body::after{
 /* 🔮 CONTAINER */
 .container{
     text-align:center;
-    padding-top:70px;
-    padding-bottom:80px;
 }
 
-/* 🔮 LOGO — CORRIGIDO (COLADO) */
+/* 🔮 LOGO — ENCOSTA PAINEL */
 .logo{
     width:520px;
     image-rendering:pixelated;
-    margin-bottom:-12px; /* ⭐ ENCOSTA NO PAINEL */
+    margin-bottom:-22px;   /* ⭐ aproxima painel (ajuste fino) */
     filter:drop-shadow(0 0 10px #d7c24a);
 }
 
