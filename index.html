@@ -11,14 +11,20 @@
     src:url('Minecraftia-Regular.ttf');
 }
 
-/* BACKGROUND */
+/* BACKGROUND + VIEWPORT FIX */
 body{
     margin:0;
+    height:100vh;
+    overflow:hidden;
     background:url('background.png');
     background-repeat:repeat;
     font-family:'Minecraftia', monospace;
     color:#fff;
     position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 /* CRT */
@@ -36,7 +42,7 @@ body::after{
     pointer-events:none;
 }
 
-/* VOLUME ICON */
+/* VOLUME */
 .volume{
     position:fixed;
     top:15px;
@@ -50,19 +56,17 @@ body::after{
 /* CONTAINER */
 .container{
     text-align:center;
-    padding-top:70px;
-    padding-bottom:80px;
 }
 
-/* LOGO */
+/* LOGO ENCOSTANDO */
 .logo{
     width:520px;
     image-rendering:pixelated;
-    margin-bottom:-12px;
+    margin-bottom:-22px; /* aproxima painel */
     filter:drop-shadow(0 0 10px #d7c24a);
 }
 
-/* PANEL SNES */
+/* PANEL */
 .panel{
     margin:0 auto;
     background:#000;
