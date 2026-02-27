@@ -1,1 +1,96 @@
+@font-face{
+font-family:'Minecraftia';
+src:url('Minecraftia-Regular.ttf');
+}
+
+/* 🔮 BACKGROUND */
+body{
+margin:0;
+height:100vh;
+background:url('background.png');
+background-size:180px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Minecraftia', monospace;
+color:#fff;
+}
+
+/* 🔮 CONTAINER */
+.container{
+text-align:center;
+}
+
+/* 🔮 LOGO */
+.logo{
+width:320px;
+image-rendering:pixelated;
+margin-bottom:18px;
+}
+
+/* 🔮 PANEL (menu style) */
+.panel{
+background:rgba(0,0,0,0.6);
+padding:18px;
+border:4px solid #e5d35a;
+box-shadow:0 0 0 4px #6b5f12;
+width:380px;
+}
+
+/* 🔮 LABELS */
+label{
+display:block;
+text-align:left;
+margin-top:10px;
+margin-bottom:4px;
+font-size:13px;
+}
+
+/* 🔮 INPUTS */
+input{
+width:100%;
+padding:8px;
+border:none;
+outline:none;
+font-family:'Minecraftia';
+background:#111;
+color:#fff;
+}
+
+.fixed{
+opacity:.6;
+}
+
+/* 🔮 BUTTON (menu option style) */
+.btn{
+margin-top:14px;
+padding:10px;
+width:100%;
+background:#e5d35a;
+color:#000;
+border:none;
+cursor:pointer;
+font-family:'Minecraftia';
+transition:.15s;
+}
+
+.btn:hover{
+filter:brightness(1.15);
+}
+
+/* 🔮 OUTPUT */
+.output{
+margin-top:12px;
+background:#111;
+padding:8px;
+word-break:break-all;
+min-height:20px;
+}
+
+/* 🔮 FOOTER */
+.footer{
+margin-top:10px;
+font-size:11px;
+opacity:.7;
+}
 
